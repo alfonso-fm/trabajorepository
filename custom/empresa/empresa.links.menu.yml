@@ -1,0 +1,12 @@
+empresa.description:
+  title: Page Example
+  route_name: empresa_description
+  expanded: TRUE
+
+empresa.simple:
+  title: Simple - no arguments
+  route_name: empresa_simple
+  parent: empresa.description
+
+# We can't define a menu link for the page_example_arguments route, because it
+# requires path arguments.

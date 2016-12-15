@@ -1,0 +1,4 @@
+empresa.list:
+  title: Empresas
+  route_name: empresa_list
+  expanded: TRUE

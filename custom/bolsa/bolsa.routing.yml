@@ -1,0 +1,7 @@
+bolsa_portada:
+  path: '/bolsa'
+  defaults:
+    _controller: '\Drupal\bolsa\Controller\BolsaController::portada'
+    _title: 'Feria'
+  requirements:
+    _permission: 'access content'

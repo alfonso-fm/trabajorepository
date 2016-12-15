@@ -1,0 +1,678 @@
+<?php
+
+function empresa_install() {
+  /*  
+  $fields = array(
+      'RFC'            =>'NORR811899AC',
+      'IdUsuario'      =>'NORR811899AC',
+      'Nombre'         =>'Empresa del Norte',
+      'Descripcion'    =>'Ejemplo de Descripción de Empresa del Norte',
+      'URLPagina'      =>'http://www.empresadelnorte.net',
+      'Logo'           =>'http://www.empresadelnorte.net',
+      'IdRamo'         => 1,
+      'Habilitado'     => 1,
+      'MostrarEnFeria' => 1,
+  );
+  db_insert('EMPRESAS')->fields($fields)->execute();
+
+  $fields = array(
+      'RFC'            =>'SURR811899AC',
+      'IdUsuario'      =>'SURR811899AC',
+      'Nombre'         =>'Empresa del Sur',
+      'Descripcion'    =>'Ejemplo de Descripción de Empresa del Sur',
+      'URLPagina'      =>'http://www.empresadelsur.net',
+      'Logo'           =>'http://www.empresadelsur.net',
+      'IdRamo'         => 1,
+      'Habilitado'     => 1,
+      'MostrarEnFeria' => 1,
+  );
+  db_insert('EMPRESAS')->fields($fields)->execute();
+  
+  $fields = array(
+      'RFC'            =>'OESR811899AC',
+      'IdUsuario'      =>'OESR811899AC',
+      'Nombre'         =>'Empresa del Oeste',
+      'Descripcion'    =>'Ejemplo de Descripción de Empresa del Oeste',
+      'URLPagina'      =>'http://www.empresadeloeste.net',
+      'Logo'           =>'http://www.empresadeloeste.net',
+      'IdRamo'         => 1,
+      'Habilitado'     => 1,
+      'MostrarEnFeria' => 1,
+  );
+  db_insert('EMPRESAS')->fields($fields)->execute();
+  
+ $fields = array(
+      'RFC'            =>'ESTR811899AC',
+      'IdUsuario'      =>'ESTR811899AC',
+      'Nombre'         =>'Empresa del Este',
+      'Descripcion'    =>'Ejemplo de Descripción de Empresa del Este',
+      'URLPagina'      =>'http://www.empresadeleste.net',
+      'Logo'           =>'http://www.empresadeleste.net',
+      'IdRamo'         => 1,
+      'Habilitado'     => 1,
+      'MostrarEnFeria' => 1,
+  );
+  db_insert('EMPRESAS')->fields($fields)->execute();
+*/
+   $fields = array(
+    'RFC'            =>'A0123456789AA',
+    'IdUsuario'      =>'A0123456789AA',
+    'Nombre'         =>'ACCENTURE',
+    'Comment'        =>'Todas las carreras',
+    'Descripcion'    =>'Accenture is a leading global professional services company, providing a broad range of services and solutions in strategy, consulting, digital, technology and operations.',
+    'URLPagina'      =>'https://www.accenture.com/mx-es/',
+    'Logo'           =>'http://bolsatrabajo.ingenieria.unam.mx/feria/img/logos_empresas/accenture.jpg',
+    'IdRamo'         => 1,
+    'Habilitado'     => 1,
+    'MostrarEnFeria' => 1,
+    );
+  db_insert('EMPRESAS')->fields($fields)->execute();
+
+  $fields = array(
+    'RFC'            =>'B0123456789BB',
+    'IdUsuario'      =>'B0123456789BB',
+    'Logo'           =>'http://bolsatrabajo.ingenieria.unam.mx/feria/img/logos_empresas/aiween.jpg',
+    'Nombre'         =>'AIWEEN',
+    'Comment'        =>'Todas las carreras',
+    'Descripcion'    =>'Aiween es un espacio en el que puedes plantear retos de temas que necesitas solucionar o generar ideas para tener ingresos, oportunidades laborales y más. Postear retos o ideas es gratis.',
+    'URLPagina'      =>'http://www.aiween.com',
+    'IdRamo'         => 1,
+    'Habilitado'     => 1,
+    'MostrarEnFeria' => 1,
+  );
+  db_insert('EMPRESAS')->fields($fields)->execute();
+
+  $fields = array(
+    'RFC'            =>'C0123456789CC',
+    'IdUsuario'      =>'C0123456789CC',
+    'Logo'           =>'http://bolsatrabajo.ingenieria.unam.mx/feria/img/logos_empresas/alstom.jpg',
+    'Nombre'         =>'ALSTOM',
+    'Comment'        =>'Todas las carreras',
+    'Descripcion'    =>'Alstom develops and markets systems,equipment and services for the railway sector.',
+    'URLPagina'      =>'http://www.alstom.com/',
+    'IdRamo'         => 1,
+    'Habilitado'     => 1,
+    'MostrarEnFeria' => 1,
+  );
+  db_insert('EMPRESAS')->fields($fields)->execute();
+
+  $fields = array(
+    'RFC'            =>'D0123456789DD',
+    'IdUsuario'      =>'D0123456789DD',
+    'Logo'            =>'http://bolsatrabajo.ingenieria.unam.mx/feria/img/logos_empresas/aspel.jpg',
+    'Nombre'         =>'ASPEL',
+    'Comment'        =>'Todas las carreras',
+    'Descripcion'    =>'Aspel es una empresa 100% mexicana líder en el mercado de software y soluciones administrativas. Automatiza los procesos de las micro, pequeñas y medianas empresas, favoreciendo la correcta toma de decisiones de manera sencilla, eficiente y productiva.',
+    'URLPagina'      =>'http://www.aspel.com.mx/',
+    'IdRamo'         => 1,
+    'Habilitado'     => 1,
+    'MostrarEnFeria' => 1,
+  );
+  db_insert('EMPRESAS')->fields($fields)->execute();
+
+  $fields = array(
+    'RFC'            =>'E0123456789CC',
+    'IdUsuario'      =>'E0123456789CC',
+    'Logo'           =>'http://bolsatrabajo.ingenieria.unam.mx/feria/img/logos_empresas/austromex.jpg',
+    'Nombre'         =>'AUSTROMEX',
+    'Comment'        =>'Ingenierías Civil, Industrial, Mecánica y Mecatrónica',
+    'Descripcion'    =>'Ofrecemos a nuestros clientes las mejores soluciones a sus necesidades de abrasivos y herramientas relacionadas para generar utilidades en beneficio de clientes, proveedores, colaboradores, accionistas y de nuestro país en general.',
+    'URLPagina'      =>'http://www.austromex.com.mx/',
+    'IdRamo'         => 1,
+    'Habilitado'     => 1,
+    'MostrarEnFeria' => 1,
+  );
+  db_insert('EMPRESAS')->fields($fields)->execute();
+
+  $fields = array(
+    'RFC'            =>'F0123456789CC',
+    'IdUsuario'      =>'F0123456789CC',
+    'Logo'           =>'http://bolsatrabajo.ingenieria.unam.mx/feria/img/logos_empresas/banco_mexico.jpg',
+    'Nombre'         =>'BANCO DE MÉXICO',
+    'Comment'        =>'Ingeniería en Computación',
+    'Descripcion'    =>'El Banco de México es el banco central de México. Fue fundado por decreto como sociedad anónima el 25 de agosto de 1925 bajo el gobierno de Plutarco Elías Calles, iniciando su operación como banco central el 1 de septiembre de ese mismo año',
+    'URLPagina'      =>'http://www.banxico.org.mx/empleo-o-servicio-social/',
+    'IdRamo'         => 1,
+    'Habilitado'     => 1,
+    'MostrarEnFeria' => 1,
+  );
+  db_insert('EMPRESAS')->fields($fields)->execute();
+
+  $fields = array(
+    'RFC'            =>'G0123456789CC',
+    'IdUsuario'      =>'G0123456789CC',
+    'Logo'       =>'http://bolsatrabajo.ingenieria.unam.mx/feria/img/logos_empresas/bocar_group.jpg',
+    'Nombre'         =>'BOCAR GROUP',
+    'Comment'        =>'Todas las carreras',
+    'Descripcion'    =>'BOCAR Group se estableció en 1967 en la ciudad de México, originalmente como un fabricante de bombas y carburadores. Hoy contamos con tres divisiones de negocio estratégico, sirviendo principalmente a la industria automotriz internacional',
+    'URLPagina'      =>'http://www.bocar.com.mx/',
+    'IdRamo'         => 1,
+    'Habilitado'     => 1,
+    'MostrarEnFeria' => 1,
+  );
+  db_insert('EMPRESAS')->fields($fields)->execute();
+
+  $fields = array(
+    'RFC'            =>'H0123456789CC',
+    'IdUsuario'      =>'H0123456789CC',
+    'Logo'       =>'http://bolsatrabajo.ingenieria.unam.mx/feria/img/logos_empresas/cemex.jpg',
+    'Nombre'         =>'CEMEX',
+    'Comment'        =>'',
+    'Descripcion'    =>'Líder global en la producción y venta de Cemento, Concreto, Agregados y otros materiales de construcción.',
+    'URLPagina'      =>'http://www.cemexmexico.com/index.aspx',
+    'IdRamo'         => 1,
+    'Habilitado'     => 1,
+    'MostrarEnFeria' => 1,
+  );
+  db_insert('EMPRESAS')->fields($fields)->execute();
+
+  $fields = array(
+    'RFC'            =>'I0123456789CC',
+    'IdUsuario'      =>'I0123456789CC',
+    'Logo'       =>'http://bolsatrabajo.ingenieria.unam.mx/feria/img/logos_empresas/ciatalentos.jpg',
+    'Nombre'         =>'CIA DE TALENTOS',
+    'Comment'        =>'Todas las carreras',
+    'Descripcion'    =>'Empresa pionera en la incorporación de una visión estratégica en Administración de Personal.',
+    'URLPagina'      =>'http://www.ciadetalentos.com.mx/',
+    'IdRamo'         => 1,
+    'Habilitado'     => 1,
+    'MostrarEnFeria' => 1,
+  );
+  db_insert('EMPRESAS')->fields($fields)->execute();
+
+  $fields = array(
+    'RFC'            =>'J0123456789CC',
+    'IdUsuario'      =>'J0123456789CC',
+    'Logo'       =>'http://bolsatrabajo.ingenieria.unam.mx/feria/img/logos_empresas/compucom.jpg',
+    'Nombre'         =>'COMPUCOM',
+    'Comment'        =>'Todas las carreras',
+    'Descripcion'    =>'We understand that technology is an enabler for people to get things done. Technology can drive collaboration, innovation and competitive differentiation. To let you achieve more than you thought possible.',
+    'URLPagina'      =>'http://compucom.com',
+    'IdRamo'         => 1,
+    'Habilitado'     => 1,
+    'MostrarEnFeria' => 1,
+  );
+  db_insert('EMPRESAS')->fields($fields)->execute();
+
+  $fields = array(
+    'RFC'            =>'K0123456789CC',
+    'IdUsuario'      =>'K0123456789CC',
+    'Logo'       =>'http://bolsatrabajo.ingenieria.unam.mx/feria/img/logos_empresas/corporativodl.jpg',
+    'Nombre'         =>'CORPORATIVO DL',
+    'Comment'        =>'Ingenieros Mecánicos, Mecatrónicos, Industriales, Eléctricos Electrónicos y Químicos',
+    'Descripcion'    =>'Corporativo DL es un grupo internacional de tecnología médica, con más de 25 años de experiencia en el desarrollo, fabricación y comercialización de material de curación, dispositivos médicos y productos higiénicos.',
+    'URLPagina'      =>'http://www.corporativodl.com.mx/',
+    'IdRamo'         => 1,
+    'Habilitado'     => 1,
+    'MostrarEnFeria' => 1,
+  );
+  db_insert('EMPRESAS')->fields($fields)->execute();
+
+  $fields = array(
+    'RFC'            =>'L0123456789CC',
+    'IdUsuario'      =>'L0123456789CC',
+    'Logo'       =>'http://bolsatrabajo.ingenieria.unam.mx/feria/img/logos_empresas/degoae.jpg',
+    'Nombre'         =>'DGOAE UNAM',
+    'Comment'        =>'Todas las carreras',
+    'Descripcion'    =>'Bolsa Universitaria de Trabajo',
+    'URLPagina'      =>'http://www.dgoserver.unam.mx/portaldgose/bolsa-trabajo/htmls/index.html',
+    'IdRamo'         => 1,
+    'Habilitado'     => 1,
+    'MostrarEnFeria' => 1,
+  );
+  db_insert('EMPRESAS')->fields($fields)->execute();
+
+  $fields = array(
+    'RFC'            =>'M0123456789CC',
+    'IdUsuario'      =>'M0123456789CC',
+    'Logo'         =>'http://bolsatrabajo.ingenieria.unam.mx/feria/img/logos_empresas/emerson.jpg',
+    'Nombre'         =>'EMERSON',
+    'Comment'        =>'Todas las carreras',
+    'Descripcion'    =>'Empresa de tecnología y manufactura mundialmente ​​​diversificada. Reunimos la tecnología y la ingeniería para ofrecer soluciones innovadoras a clientes en los mercados industriales, comerciales y de consumo.',
+    'URLPagina'      =>'http://www.emerson.com/es-la',
+    'IdRamo'         => 1,
+    'Habilitado'     => 1,
+    'MostrarEnFeria' => 1,
+  );
+  db_insert('EMPRESAS')->fields($fields)->execute();
+
+  $fields = array(
+    'RFC'            =>'N0123456789CC',
+    'IdUsuario'      =>'N0123456789CC',
+    'Logo'           =>'http://bolsatrabajo.ingenieria.unam.mx/feria/img/logos_empresas/employer.jpg',
+    'Nombre'         =>'EMPLOYE',
+    'Comment'        =>'Todas las carreras',
+    'Descripcion'    =>'Agencia de empleo',
+    'URLPagina'      =>'http://www.employer.com.mx',
+    'IdRamo'         => 1,
+    'Habilitado'     => 1,
+    'MostrarEnFeria' => 1,
+  );
+  db_insert('EMPRESAS')->fields($fields)->execute();
+
+  $fields = array(
+    'RFC'            =>'O0123456789CC',
+    'IdUsuario'      =>'O0123456789CC',
+    'Logo'       =>'http://bolsatrabajo.ingenieria.unam.mx/feria/img/logos_empresas/ensenapormexico.jpg',
+    'Nombre'         =>'ENSEÑA POR MÉXICO',
+    'Comment'        =>'Todas las carreras de ingeniería.',
+    'Descripcion'    =>'La organización “Enseña por México/Teach For Mexico” (EPM), comprometida en impulsar la mejora continua de la calidad educativa de las niñas, niños y jóvenes en zonas de media y alta marginación del país.',
+    'URLPagina'      =>'http://ensenapormexico.org/',
+    'IdRamo'         => 1,
+    'Habilitado'     => 1,
+    'MostrarEnFeria' => 1,
+  );
+  db_insert('EMPRESAS')->fields($fields)->execute();
+
+  $fields = array(
+    'RFC'            =>'P0123456789CC',
+    'IdUsuario'      =>'P0123456789CC',
+    'Logo'         =>'http://bolsatrabajo.ingenieria.unam.mx/feria/img/logos_empresas/quimicaunam.jpg',
+    'Nombre'         =>'Facultad de Química UNAM',
+    'Comment'        =>'Ingeniería Química, Química Metalúrgica',
+    'Descripcion'    =>'Formar Ingenieros químicos con una sólida preparación científico-tecnológica y una conciencia social que les permita contribuir al desarrollo nacional sustentable y a incrementar la calidad de vida del ser humano.',
+    'URLPagina'      =>'http://www.quimica.unam.mx/',
+    'IdRamo'         => 1,
+    'Habilitado'     => 1,
+    'MostrarEnFeria' => 1,
+  );
+  db_insert('EMPRESAS')->fields($fields)->execute();
+
+  $fields = array(
+    'RFC'            =>'Q0123456789CC',
+    'IdUsuario'      =>'Q0123456789CC',
+    'Logo'         =>'http://bolsatrabajo.ingenieria.unam.mx/feria/img/logos_empresas/fritec.jpg',
+    'Nombre'         =>'FRITEC',
+    'Comment'        =>'Todas las carreras',
+    'Descripcion'    =>'FRITEC empresa 100% Mexicana, especialista en materiales de fricción con más de 30 años dentro del mercado automotriz en los cuales se ha mantenido como marca líder en el mercado nacional.',
+    'URLPagina'      =>'http://www.fritec.com.mx/',
+    'IdRamo'         => 1,
+    'Habilitado'     => 1,
+    'MostrarEnFeria' => 1,
+  );
+  db_insert('EMPRESAS')->fields($fields)->execute();
+
+  $fields = array(
+    'RFC'            =>'R0123456789CC',
+    'IdUsuario'      =>'R0123456789CC',
+    'Logo'         =>'http://bolsatrabajo.ingenieria.unam.mx/feria/img/logos_empresas/generalelectric.jpg',
+    'Nombre'         =>'GENERAL ELECTRIC',
+    'Comment'        =>'Todas las carreras',
+    'Descripcion'    =>'GE trabaja en cosas que importan. Las mejores personas con la mejor tecnología, están asumiendo los desafíos más difíciles. Construyendo, impulsando, moviendo y cuidando la salud de América Latina.',
+    'URLPagina'      =>'http://www.ge.com/latam/company/mexico',
+    'IdRamo'         => 1,
+    'Habilitado'     => 1,
+    'MostrarEnFeria' => 1,
+  );
+  db_insert('EMPRESAS')->fields($fields)->execute();
+
+  $fields = array(
+    'RFC'            =>'S0123456789CC',
+    'IdUsuario'      =>'S0123456789CC',
+    'Logo'         =>'http://bolsatrabajo.ingenieria.unam.mx/feria/img/logos_empresas/generalmotors.jpg',
+    'Nombre'         =>'GENERAL MOTORS',
+    'Comment'        =>'',
+    'Descripcion'    =>'Empresa fabricante de automóviles.',
+    'URLPagina'      =>'http://www.gm.com.mx/corporativo/empleo_gm/',
+    'IdRamo'         => 1,
+    'Habilitado'     => 1,
+    'MostrarEnFeria' => 1,
+  );
+  db_insert('EMPRESAS')->fields($fields)->execute();
+
+  $fields = array(
+    'RFC'            =>'T0123456789CC',
+    'IdUsuario'      =>'T0123456789CC',
+    'Logo'         =>'http://bolsatrabajo.ingenieria.unam.mx/feria/img/logos_empresas/gnr.jpg',
+    'Nombre'         =>'GNR APOYO ESTRATÉGICO',
+    'Comment'        =>'Todas las carreras',
+    'Descripcion'    =>'Somos una empresa del ramo de las Tecnologías de la Información y Comunicaciones. Nuestra práctica comercial abarca todos los sectores de la industria y al Gobierno Federal.',
+    'URLPagina'      =>'http://www.gnr.com.mx/',
+    'IdRamo'         => 1,
+    'Habilitado'     => 1,
+    'MostrarEnFeria' => 1,
+  );
+  db_insert('EMPRESAS')->fields($fields)->execute();
+
+  $fields = array(
+    'RFC'            =>'U0123456789CC',
+    'IdUsuario'      =>'U0123456789CC',
+    'Logo'       =>'http://bolsatrabajo.ingenieria.unam.mx/feria/img/logos_empresas/aldesa.jpg',
+    'Nombre'         =>'GRUPO ALDESA',
+    'Comment'        =>'Todas las carreras',
+    'Descripcion'    =>'Grupo Aldesa ha conseguido posicionarse en ocho años de presencia en el mercado mexicano entre los principales grupos constructores del país y como una empresa de referencia en el sector.',
+    'URLPagina'      =>'http://www.grupoaldesa.com.mx',
+    'IdRamo'         => 1,
+    'Habilitado'     => 1,
+    'MostrarEnFeria' => 1,
+  );
+  db_insert('EMPRESAS')->fields($fields)->execute();
+
+  $fields = array(
+    'RFC'            =>'V0123456789CC',
+    'IdUsuario'      =>'V0123456789CC',
+    'Logo'       =>'http://bolsatrabajo.ingenieria.unam.mx/feria/img/logos_empresas/grupo_autofin.jpg',
+    'Nombre'         =>'GRUPO AUTOFIN',
+    'Comment'        =>'Todas las carreras',
+    'Descripcion'    =>'Con más de 38 años de experiencia te ofrecemos el mejor sistema de Autofinanciamiento en México con la gama más amplia de marcas de vehículos.',
+    'URLPagina'      =>'http://www.grupoautofin.com/',
+    'IdRamo'         => 1,
+    'Habilitado'     => 1,
+    'MostrarEnFeria' => 1,
+  );
+  db_insert('EMPRESAS')->fields($fields)->execute();
+
+  $fields = array(
+    'RFC'            =>'W0123456789CC',
+    'IdUsuario'      =>'W0123456789CC',
+    'Logo'       =>'http://bolsatrabajo.ingenieria.unam.mx/feria/img/logos_empresas/grupocarso.jpg',
+    'Nombre'         =>'GRUPO CARSO',
+    'Comment'        =>'Todas las carreras',
+    'Descripcion'    =>'Uno de los conglomerados más grandes e importantes de México y Latinoamerica. Controla y opera gran variedad de empresas en el ramo comercial, comunicacional, industrial y de consumo.',
+    'URLPagina'      =>'http://www.ccicsa.com.mx/es/Paginas/Home.aspx',
+    'IdRamo'         => 1,
+    'Habilitado'     => 1,
+    'MostrarEnFeria' => 1,
+  );
+  db_insert('EMPRESAS')->fields($fields)->execute();
+
+  $fields = array(
+    'RFC'            =>'X0123456789CC',
+    'IdUsuario'      =>'X0123456789CC',
+    'Logo'           =>'http://bolsatrabajo.ingenieria.unam.mx/feria/img/logos_empresas/grupomexico.jpg',
+    'Nombre'         =>'GRUPO MÉXICO',
+    'Comment'        =>'Ingeniería Minas y Metalurgia, Geología, Geomática, Geofísica',
+    'Descripcion'    =>'Empresa minera explotadora de Cobre, Zinc, Plata, Oro, Plomo y Molibdeno.',
+    'URLPagina'      =>'http://www.gmexico.com.mx/',
+    'IdRamo'         => 1,
+    'Habilitado'     => 1,
+    'MostrarEnFeria' => 1,
+  );
+  db_insert('EMPRESAS')->fields($fields)->execute();
+
+  $fields = array(
+    'RFC'            =>'Y0123456789CC',
+    'IdUsuario'      =>'Y0123456789CC',
+    'Logo'       =>'http://bolsatrabajo.ingenieria.unam.mx/feria/img/logos_empresas/grupomodelo.jpg',
+    'Nombre'         =>'GRUPO MODELO',
+    'Comment'        =>'Todas las carreras',
+    'Descripcion'    =>'Grupo Modelo, fundado en 1925, es una empresa líder en la elaboración, distribución y venta de cerveza en México y es la séptima zona de Anheuser-Busch InBev, empresa cervecera líder a nivel global.',
+    'URLPagina'      =>'http://www.grupomodelo.com.mx/',
+    'IdRamo'         => 1,
+    'Habilitado'     => 1,
+    'MostrarEnFeria' => 1,
+  );
+  db_insert('EMPRESAS')->fields($fields)->execute();
+
+  $fields = array(
+    'RFC'            =>'Z0123456789CC',
+    'IdUsuario'      =>'Z0123456789CC',
+    'Logo'         =>'http://bolsatrabajo.ingenieria.unam.mx/feria/img/logos_empresas/honeywell.jpg',
+    'Nombre'         =>'HONEYWELL',
+    'Comment'        =>'Todas las carreras',
+    'Descripcion'    =>'At Honeywell, we are building a world that’s safer and more secure, more comfortable and energy efficient and more innovative and productive.',
+    'URLPagina'      =>'http://www.careersathoneywell.com/',
+    'IdRamo'         => 1,
+    'Habilitado'     => 1,
+    'MostrarEnFeria' => 1,
+  );
+  db_insert('EMPRESAS')->fields($fields)->execute();
+
+  $fields = array(
+    'RFC'            =>'AA123456789CC',
+    'IdUsuario'      =>'AA123456789CC',
+    'Logo'       =>'http://bolsatrabajo.ingenieria.unam.mx/feria/img/logos_empresas/humankind.jpg',
+    'Nombre'         =>'HUMAN KIND',
+    'Comment'        =>'Todas las carreras',
+    'Descripcion'    =>'Somos una empresa de Recursos Humanos que busca crear vínculos trascendentes entre individuos talentosos y empresas comprometidas con su personal.',
+    'URLPagina'      =>'http://www.humankind.mx/',
+    'IdRamo'         => 1,
+    'Habilitado'     => 1,
+    'MostrarEnFeria' => 1,
+  );
+  db_insert('EMPRESAS')->fields($fields)->execute();
+
+  $fields = array(
+    'RFC'            =>'AB123456789CC',
+    'IdUsuario'      =>'AB123456789CC',
+    'Logo'           =>'http://bolsatrabajo.ingenieria.unam.mx/feria/img/logos_empresas/inroads.jpg',
+    'Nombre'         =>'INROADS DE MÉXICO',
+    'Comment'        =>'',
+    'Descripcion'    =>'INROADS de México, A.C. es una organización dedicada a detectar y formar talento entre jóvenes universitarios de bajos recursos económicos.',
+    'URLPagina'      =>'https://www.inroads.org.mx/',
+    'IdRamo'         => 1,
+    'Habilitado'     => 1,
+    'MostrarEnFeria' => 1,
+  );
+  db_insert('EMPRESAS')->fields($fields)->execute();
+
+  $fields = array(
+    'RFC'            =>'AC123456789CC',
+    'IdUsuario'      =>'AC123456789CC',
+    'Logo'       =>'http://bolsatrabajo.ingenieria.unam.mx/feria/img/logos_empresas/italento.jpg',
+    'Nombre'         =>'ITALENTO',
+    'Comment'        =>'Todas las carreras',
+    'Descripcion'    =>'Es un punto de encuentro entre profesionales en búsqueda del empleo ideal y reclutadores en busca del mejor talento.',
+    'URLPagina'      =>'http://www.italento.com.mx/',
+    'IdRamo'         => 1,
+    'Habilitado'     => 1,
+    'MostrarEnFeria' => 1,
+  );
+  db_insert('EMPRESAS')->fields($fields)->execute();
+
+  $fields = array(
+    'RFC'            =>'AD123456789CC',
+    'IdUsuario'      =>'AD123456789CC',
+    'Logo'       =>'http://bolsatrabajo.ingenieria.unam.mx/feria/img/logos_empresas/jafra.jpg',
+    'Nombre'         =>'JAFRA',
+    'Comment'        =>'Ingeniería Industrial, Mecánica, Mecatrónica y Eléctrica Electrónica',
+    'Descripcion'    =>'Empresa trasnacional líder en el cuidado personal, certificada como una de las mejores empresas ante GPTW y diferentes distintivos como ESR y MEG, ¿Qué tanto podemos extendernos?.',
+    'URLPagina'      =>'http://www.talentojafra.com.mx',
+    'IdRamo'         => 1,
+    'Habilitado'     => 1,
+    'MostrarEnFeria' => 1,  
+    );
+  db_insert('EMPRESAS')->fields($fields)->execute();
+
+  $fields = array(
+    'RFC'            =>'AE123456789CC',
+    'IdUsuario'      =>'AE123456789CC',
+    'Logo'       =>'http://bolsatrabajo.ingenieria.unam.mx/feria/img/logos_empresas/masnegocio.jpg',
+    'Nombre'         =>'MAS NEGOCIO IT SERVICES ONDEMAND',
+    'Comment'        =>'',
+    'Descripcion'    =>'Desde el año 2000, MásNegocio fue la primera empresa en Latinoamérica en ofrecer aplicaciones bajo un modelo de Outsourcing, reconocido como Software as a Service (SaaS) bajo los más altos niveles de servicio y seguridad.',
+    'URLPagina'      =>'http://www.masnegocio.com/',
+    'IdRamo'         => 1,
+    'Habilitado'     => 1,
+    'MostrarEnFeria' => 1,
+  );
+  db_insert('EMPRESAS')->fields($fields)->execute();
+
+  $fields = array(
+    'RFC'            =>'AF123456789CC',
+    'IdUsuario'      =>'AF123456789CC',
+    'Logo'           =>'http://bolsatrabajo.ingenieria.unam.mx/feria/img/logos_empresas/na_at.jpg',
+    'Nombre'         =>'NA-AT TECHNOLOGIES',
+    'Comment'        =>'Ingeniería en Computación',
+    'Descripcion'    =>'Desarrollamos proyectos de innovación tecnológica', 
+    'URLPagina'      =>'http://www.na-at.com.mx/na-at-people/',
+    'IdRamo'         => 1,
+    'Habilitado'     => 1,
+    'MostrarEnFeria' => 1,
+  );
+  db_insert('EMPRESAS')->fields($fields)->execute();
+
+  $fields = array(
+    'RFC'            =>'AG123456789CC',
+    'IdUsuario'      =>'AG123456789CC',
+    'Logo'           =>'http://bolsatrabajo.ingenieria.unam.mx/feria/img/logos_empresas/nissan.jpg',
+    'Nombre'         =>'Nissan', 
+    'Comment'        =>'Todas las carreras',
+    'Descripcion'    =>'Cuenta con instalaciones corporativas, de Mercadotecnia, Ventas, Manufactura, Distribución y Diseño en las ciudades de Aguascalientes, Distrito Federal, Cuernavaca y Toluca. Actualmente, emplea a más de 14,500 trabajadores y empleados.',
+    'URLPagina'      =>'http://www.nissan.com.mx/',
+    'IdRamo'         => 1,
+    'Habilitado'     => 1,
+    'MostrarEnFeria' => 1,
+  );
+  db_insert('EMPRESAS')->fields($fields)->execute();
+
+  $fields = array(
+    'RFC'            =>'AH123456789CC',
+    'IdUsuario'      =>'AH123456789CC',
+    'Logo'       =>'http://bolsatrabajo.ingenieria.unam.mx/feria/img/logos_empresas/occ.jpg',
+    'Nombre'         =>'OCC', 
+    'Comment'        =>'Todas las carreras',
+    'Descripcion'    =>'El medio perfecto que establezca el vínculo ideal entre empleador y empleado, buscando siempre la excelencia y contribuyendo con esto a mejorar la situación laboral de nuestro país.',
+    'URLPagina'      =>'https://www.occ.com.mx/',
+    'IdRamo'         => 1,
+    'Habilitado'     => 1,
+    'MostrarEnFeria' => 1,
+  );
+  db_insert('EMPRESAS')->fields($fields)->execute();
+
+  $fields = array(
+    'RFC'            =>'AI123456789CC',
+    'IdUsuario'      =>'AI123456789CC',
+    'Logo'       =>'http://bolsatrabajo.ingenieria.unam.mx/feria/img/logos_empresas/palaciomineria.jpg',
+    'Nombre'         =>'Palacio de Minería',
+    'Comment'        =>'Todas las carreras de ingeniería.',
+    'Descripcion'    =>'Educación continua y a distancia. Posgrados.',
+    'URLPagina'      =>'http://www.mineria.unam.mx/',
+    'IdRamo'         => 1,
+    'Habilitado'     => 1,
+    'MostrarEnFeria' => 1,
+  );
+  db_insert('EMPRESAS')->fields($fields)->execute();
+
+  $fields = array(
+    'RFC'            =>'AJ123456789CC',
+    'IdUsuario'      =>'AJ123456789CC',
+    'Logo'           =>'http://bolsatrabajo.ingenieria.unam.mx/feria/img/logos_empresas/paradox.jpg',
+    'Nombre'         =>'PARADOX',
+    'Comment'        =>'Ingeniería en Computación',
+    'Descripcion'    =>'Nuestro equipo está conformado de expertos en la materia, con más de 14 años trabajando en esta área, así como nuevos talentos con amplia visión, lo cual en conjunto, nos da la fortaleza de potencializar y agilizar cualquier solución que se nos presente.',
+    'URLPagina'      =>'http://www.paradox-tech.com/',
+    'IdRamo'         => 1,
+    'Habilitado'     => 1,
+    'MostrarEnFeria' => 1,
+  );
+  db_insert('EMPRESAS')->fields($fields)->execute();
+
+  $fields = array(
+    'RFC'            =>'AK123456789CC',
+    'IdUsuario'      =>'AK123456789CC',
+    'Logo'           =>'http://bolsatrabajo.ingenieria.unam.mx/feria/img/logos_empresas/pg.jpg',
+    'Nombre'         =>'PROCTER & GAMBLE',
+    'Comment'        =>'Todas las carreras',
+    'Descripcion'    =>'Empresa especializada en bienes de consumo. ', 
+    'URLPagina'      =>'http://www.pg.com/es_LATAM/MX/',
+    'IdRamo'         => 1,
+    'Habilitado'     => 1,
+    'MostrarEnFeria' => 1,
+  );
+  db_insert('EMPRESAS')->fields($fields)->execute();
+
+  $fields = array(
+    'RFC'            =>'AL123456789CC',
+    'IdUsuario'      =>'AL123456789CC',
+    'Logo'           =>'http://bolsatrabajo.ingenieria.unam.mx/feria/img/logos_empresas/schlumberger.jpg',
+    'Nombre'         =>'SCHLUMBERGER',
+    'Comment'        =>'',
+    'Descripcion'    =>'Es la mayor empresa del mundo de servicios a yacimientos petroleros.', 
+    'URLPagina'      =>'http://www.slb.com/',
+    'IdRamo'         => 1,
+    'Habilitado'     => 1,
+    'MostrarEnFeria' => 1,
+  );
+  db_insert('EMPRESAS')->fields($fields)->execute();
+
+  $fields = array(
+    'RFC'            =>'AM123456789CC',
+    'IdUsuario'      =>'AM123456789CC',
+    'Logo'           =>'http://bolsatrabajo.ingenieria.unam.mx/feria/img/logos_empresas/schneider_electric.jpg',
+    'Nombre'         =>'SCHNEIDER ELECTRIC',
+    'Comment'        =>'Todas las carreras',
+    'Descripcion'    =>'Nuestras tecnologías garantizan que la vida no se detiene: Life Is On, para todos y en cualquier momento, desde que despiertas y hasta que vas a dormir.',
+    'URLPagina'      =>'http://www.schneider-electric.com.mx/es/',
+    'IdRamo'         => 1,
+    'Habilitado'     => 1,
+    'MostrarEnFeria' => 1,
+  );
+  db_insert('EMPRESAS')->fields($fields)->execute();
+
+  $fields = array(
+    'RFC'            =>'AN123456789CC',
+    'IdUsuario'      =>'AN123456789CC',
+    'Logo'           =>'http://bolsatrabajo.ingenieria.unam.mx/feria/img/logos_empresas/sefi.jpg',
+    'Nombre'         =>'SEFI',
+    'Comment'        =>'Todas las carreras de ingeniería.',
+    'Descripcion'    =>'Sociedad de Exalumnos de la Facultad de Ingeniería',
+    'URLPagina'      =>'http://sefi.org.mx/',
+    'IdRamo'         => 1,
+    'Habilitado'     => 1,
+    'MostrarEnFeria' => 1,
+  );
+  db_insert('EMPRESAS')->fields($fields)->execute();
+
+  $fields = array(
+    'RFC'            =>'AO123456789CC',
+    'IdUsuario'      =>'AO123456789CC',
+    'Logo'           =>'http://bolsatrabajo.ingenieria.unam.mx/feria/img/logos_empresas/tyco.jpg',
+    'Nombre'         =>'TYCO',
+    'Comment'        =>'Todas las carreras',
+    'Descripcion'    =>'Tyco’s mission is to advance safety and security by finding smarter ways to save lives, improve businesses and protect where people live and work.',
+    'URLPagina'      =>'http://www.tyco.com/',
+    'IdRamo'         => 1,
+    'Habilitado'     => 1,
+    'MostrarEnFeria' => 1,
+  );
+  db_insert('EMPRESAS')->fields($fields)->execute();
+
+  $fields = array(
+    'RFC'            =>'AP123456789CC',
+    'IdUsuario'      =>'AP123456789CC',
+    'Logo'           =>'http://bolsatrabajo.ingenieria.unam.mx/feria/img/logos_empresas/unilever.jpg',
+    'Nombre'         =>'UNILEVER',
+    'Comment'        =>'Todas las carreras de Ingeniería',
+    'Descripcion'    =>'Es uno de los proveedores líderes a nivel mundial en productos de consumo.',
+    'URLPagina'      =>'http://www.unilever.com.mx/',
+    'IdRamo'         => 1,
+    'Habilitado'     => 1,
+    'MostrarEnFeria' => 1,
+  );
+  db_insert('EMPRESAS')->fields($fields)->execute();
+
+  $fields = array(
+    'RFC'            =>'AQ123456789CC',
+    'IdUsuario'      =>'AQ123456789CC',
+    'Logo'           =>'http://bolsatrabajo.ingenieria.unam.mx/feria/img/logos_empresas/walmart.jpg',
+    'Nombre'         =>'WALMART',
+    'Comment'        =>'Todas las carreras',
+    'Descripcion'    =>'Corporación multinacional de tiendas de origen estadounidense, que opera cadenas de grandes almacenes de descuento y clubes de almacenes',
+    'URLPagina'      =>'http://www.walmartmexico.com.mx/bolsa-de-trabajo-mex-cam.html',
+    'IdRamo'         => 1,
+    'Habilitado'     => 1,
+    'MostrarEnFeria' => 1,
+  );
+  db_insert('EMPRESAS')->fields($fields)->execute();
+
+}
+
+function empresa_schema() {
+  $schema['EMPRESAS'] = array(
+    'fields'        =>array(
+      'RFC'            =>array('type' => 'varchar','length' => 15    ,'not null' => TRUE ,),
+      'IdUsuario'      =>array('type' => 'varchar','length' => 100   ,'not null' => TRUE ,),
+      'Nombre'         =>array('type' => 'varchar','length' => 100   ,'not null' => TRUE ,),
+      'Descripcion'    =>array('type' => 'varchar','length' => 500   ,'not null' => TRUE ,),
+      'Comment'        =>array('type' => 'varchar','length' => 500   ,'not null' => TRUE ,),
+      'URLPagina'      =>array('type' => 'varchar','length' => 200   ,'not null' => FALSE,),
+      'Logo'           =>array('type' => 'varchar','length' => 200   ,'not null' => FALSE,),
+      'IdRamo'         =>array('type' => 'int','size' => 'small' ,'not null' => TRUE ,),
+      'Habilitado'     =>array('type' => 'int','size' => 'tiny'  ,'not null' => TRUE,'default' => 0,),
+      'MostrarEnFeria' =>array('type' => 'int','size' => 'tiny'  ,'not null' => TRUE,'default' => 0,),
+    ),
+    'primary key' => array('RFC'),
+  );
+  return $schema;
+}

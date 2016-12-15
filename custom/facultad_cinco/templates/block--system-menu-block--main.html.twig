@@ -1,0 +1,10 @@
+<!-- Menu ============================================= block--system-menu-block--main.html.twig -->
+{% set heading_id = attributes.id ~ '-menu'|clean_id %}
+<nav id="primary-menu" class="style-2 center" role="navigation" >
+	<div class="container clearfix">
+		<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+		{% block content %}
+		{{ content }}
+		{% endblock %}
+	</div>
+</nav>

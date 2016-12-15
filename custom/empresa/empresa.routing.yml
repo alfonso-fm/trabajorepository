@@ -1,0 +1,80 @@
+empresa_list:
+  path: '/admin/content/empresa'
+  defaults:
+    _controller: '\Drupal\empresa\Controller\EmpresaController::content'
+    _title: 'Lista de Empresas'
+  requirements:
+    _permission: 'access content'
+
+empresa_list2:
+  path: '/admin/content/empresa2'
+  defaults:
+    _controller: '\Drupal\empresa\Controller\EmpresaController::content2'
+    _title: 'Lista de Empresas'
+  requirements:
+    _permission: 'access content'
+
+empresa_list3:
+  path: '/admin/content/empresa3'
+  defaults:
+    _controller: '\Drupal\empresa\Controller\EmpresaController::content3'
+    _title: 'Lista de Empresas'
+  requirements:
+    _permission: 'access content'
+
+empresa_feria:
+  path: '/feria'
+  defaults:
+    _controller: '\Drupal\empresa\Controller\EmpresaController::content3'
+    _title: 'Feria'
+  requirements:
+    _permission: 'access content'
+
+empresa_add:
+  path: '/admin/content/empresa/add'
+  defaults:
+    _form: '\Drupal\empresa\AddForm'
+    _title: 'Crea Empresa'
+  requirements:
+    _permission: 'use TypeOne form'
+
+empresa_edit:
+  path: 'admin/content/empresa/edit/{id}'
+  defaults:
+    _form: '\Drupal\empresa\AddForm'
+    _title: 'Edita Empresa'
+  requirements:
+    _permission: 'use TypeOne form'
+
+empresa_delete:
+  path: '/admin/content/empresa/delete/{rfc}'
+  defaults:
+    _form: 'Drupal\empresa\DeleteForm'
+    _title: 'Borra Empresa'
+  requirements:
+    _permission: 'manage TypeOne forms'
+
+
+
+empresa_description:
+  path: 'page-example'
+  defaults:
+    _controller: 'Drupal\empresa\Controller\EmpresaController::description'
+    _title: 'Page Example'
+  requirements:
+    _permission: 'access content'
+
+empresa_simple:
+  path: 'page-example/simple'
+  defaults:
+    _controller: 'Drupal\empresa\Controller\EmpresaController::simple'
+    _title: 'Simple - no arguments'
+  requirements:
+    _permission: 'access simple page'
+
+empresa_arguments:
+  path: 'page-example/arguments/{first}/{second}'
+  defaults:
+    _controller: 'Drupal\empresa\Controller\EmpresaController::arguments'
+  requirements:
+    _permission: 'access arguments page'

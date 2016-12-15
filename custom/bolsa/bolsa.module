@@ -1,0 +1,31 @@
+<?php
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+function bolsa_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'empresa_simple':
+        return t('This is help text for the simple page.');
+    case 'help.page.page_example':
+      return t("This is help text created in page example's implementation of hook_help().");
+  }
+}
+
+
+/**
+ * Theme hook
+ */
+function bolsa_theme($theme, $title, $description, $comments, $rows, $login_form) {
+  return array('portada' =>
+    array(
+      'variables' => array(
+        'rows'        => null, 
+        'description' => null,
+        'title'       => '',
+        'comments'    => '',
+        'login_form'  => null,
+      ),
+      'template' => 'portada'
+    )
+  );
+}

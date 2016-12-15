@@ -1,0 +1,34 @@
+<div> 
+	<div property="schema:text">
+		<h2>{{ description }}</h2>
+		<h6>{{ comments }}</h6>
+		<hr />
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-8" style="border:1px transparent solid !important;">
+					<div class="container-fluid">
+					{% set i = 0 %}
+					{% for item in rows %}
+						{% if i == 0 %}<div class="row">{% endif %}
+						<div class="col-md-4"><img alt="" class="aligncenter rounded" src="{{ item.Logo }}" />
+		        			<h5 class="tighten-height">{{ item.Nombre }}</h5>
+		        			<p><em>Carreras: {{ item.Comment }}</em></p>
+		        			<p>{{ item.Descripcion }}<a class="btn custom-btn btn-small btn-very-subtle" href="{{ item.URLPagina }}" target="_blank" title="">Sitio Web</a></p>
+		      			</div>
+						{% set i = i + 1 %}
+					    {% if i == 3 %}{% set i = 0 %}</div>{% endif %}
+					{% endfor %}
+					{% if i > 0 %}</div>{% endif %}
+					</div>
+				</div>
+				<div class="col-md-4" style="border:1px transparent solid !important;">
+					<hr />
+					{% for item in rows %}
+					    {{ item.Nombre }}<br />
+					{% endfor %}
+					<hr />
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

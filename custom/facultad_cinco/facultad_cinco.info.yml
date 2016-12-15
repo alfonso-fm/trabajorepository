@@ -1,0 +1,13 @@
+name: facultad_cinco
+description: Tema para el portal de la Bolsa de Trabajo de la Facultad de Ingeniería de la U.N.A.M
+type: theme
+version: '0.0.1'
+core: 8.x
+libraries:
+  - facultad_cinco/global-css
+  - facultad_cinco/global-js
+# Define regions
+regions:
+  header: Header
+  content: Content
+  footer: Footer

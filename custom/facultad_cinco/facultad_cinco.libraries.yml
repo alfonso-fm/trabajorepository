@@ -1,0 +1,18 @@
+global-css:
+  css:
+    theme:
+      css/style.css: {}
+      css/animate.css: {}
+      css/bootstrap.css: {}
+      css/style.css: {}
+      css/dark.css: {}
+      css/font-icons.css: {}
+      css/animate.css: {}
+      css/magnific-popup.css: {}
+      css/colors.css: {}
+      css/responsive.css: {}
+global-js:
+  js:
+    js/jquery.js: {}
+    js/plugins.js: {}
+    js/functions.js: {}

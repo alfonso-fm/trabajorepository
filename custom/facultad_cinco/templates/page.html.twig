@@ -1,0 +1,41 @@
+<div style='display:none'>VERSIÓN 1.1.7.4</div>
+<div class="layout-container">
+  <!-- Document Wrapper ============================================= -->
+  <div id="wrapper" class="clearfix" style="animation-duration: 1.5s; opacity: 1;">
+    {% include directory ~ '/templates/header.html.twig' %}
+    {{ page.primary_menu }}
+    {{ page.secondary_menu }}
+    {{ page.breadcrumb }}
+    {{ page.highlighted }}
+    {{ page.help }}
+    <main role="main">
+      <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
+      <div class="layout-content">
+        {{ title_prefix }}
+        {% if title %}
+          <h1>{{ title }}</h1>
+        {% endif %}
+        {{ title_suffix }}
+        {{ tabs }}
+        {% if action_links %}
+          <nav class="action-links">{{ action_links }}</nav>
+        {% endif %}
+        {{ page.content }}
+      </div>{# /.layout-content #}
+      {% if page.sidebar_first %}
+        <aside class="layout-sidebar-first" role="complementary">
+          {{ page.sidebar_first }}
+        </aside>
+      {% endif %}
+      {% if page.sidebar_second %}
+        <aside class="layout-sidebar-second" role="complementary">
+          {{ page.sidebar_second }}
+        </aside>
+      {% endif %}
+    </main>
+    {% include directory ~ '/templates/footer.html.twig' %}
+  </div><!-- #wrapper end 'images/footer-bg.jpg'-->
+  <!-- Go To Top============================================= -->
+  <div id="gotoTop" class="icon-angle-up"></div>
+  <!-- Footer Scripts============================================= -->
+</div>{# /.layout-container #}
